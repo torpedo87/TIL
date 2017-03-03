@@ -24,3 +24,26 @@ function main() {
 
 ```
 ***
+
+##[left rotation](https://www.hackerrank.com/challenges/ctci-array-left-rotation)
+
+```javascript
+function main() {
+    var n_temp = readLine().split(' ');
+    var n = parseInt(n_temp[0]);
+    var k = parseInt(n_temp[1]);
+    a = readLine().split(' ');
+    a = a.map(Number);
+    var arr=[1,2,3,4,5]
+    function rotate(arr){
+        arr.splice(n,0,arr[0]);
+        arr.splice(0,1);
+    }
+    for(var i=0; i<k; i++){
+        rotate(a);
+    }
+    console.log(a.join(" "));
+}
+
+```
+***
