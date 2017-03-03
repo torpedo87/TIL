@@ -23,3 +23,25 @@ function main() {
 
 ```
 ***
+
+##[grading students](https://www.hackerrank.com/challenges/grading)
+
+```javascript
+function main() {
+    var n = parseInt(readLine());
+    //console.log(n);
+    for(var i = 0; i < n; i++){
+        var grade = parseInt(readLine());
+        // your code goes here
+        if(grade<38){
+            grade=grade;
+        }else if((5-grade%5)<3){
+            grade=(grade-grade%5)+5;
+        }
+        console.log(grade);
+    }
+
+}
+
+```
+***
