@@ -82,3 +82,23 @@ function main() {
 
 ```
 ***
+
+##[kangaroo](https://www.hackerrank.com/challenges/kangaroo)
+
+```javascript
+function main() {
+    var x1_temp = readLine().split(' ');
+    var x1 = parseInt(x1_temp[0]);
+    var v1 = parseInt(x1_temp[1]);
+    var x2 = parseInt(x1_temp[2]);
+    var v2 = parseInt(x1_temp[3]);
+    var n = (x2-x1)/(v1-v2);
+    if(Number.isInteger(n) && n>0){
+        console.log("YES");
+    }else{
+        console.log("NO");
+    }
+}
+
+```
+***
