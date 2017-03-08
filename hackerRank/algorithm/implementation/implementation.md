@@ -124,3 +124,20 @@ function main() {
 
 ```
 ***
+
+##[camelcase](https://www.hackerrank.com/challenges/camelcase)
+
+```javascript
+function main() {
+    var s = readLine();
+    var upperNum=0;
+    for(var i=0; i<s.length; i++){
+        if(s[i] === s[i].toUpperCase()){
+            upperNum+=1;
+        }
+    }
+    console.log(upperNum+1);
+}
+
+```
+***
