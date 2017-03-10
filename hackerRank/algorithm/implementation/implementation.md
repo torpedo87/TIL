@@ -189,3 +189,24 @@ function readLine() {
 }
 ```
 ***
+
+##[the hurdle race](https://www.hackerrank.com/challenges/the-hurdle-race)
+
+```javascript
+function main() {
+    var n_temp = readLine().split(' ');
+    var n = parseInt(n_temp[0]);
+    var k = parseInt(n_temp[1]);
+    height = readLine().split(' ');
+    height = height.map(Number);
+    // your code goes here
+    var maxHeight = height.sort(function(a,b){return b-a})[0];
+    if(maxHeight>k){
+        console.log(maxHeight-k);
+    }else{
+        console.log(0);
+    }
+}
+
+```
+***
