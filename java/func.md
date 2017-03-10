@@ -2,24 +2,24 @@
 
 ## 비교-조건문-논리연산자
 1. 비교연산자
-==, !=
+⋅⋅⋅ ==, !=
 
 2. 기본 데이터 타입 비교
-==
+⋅⋅⋅ ==
 
 3. 기본 데이터타입 이외의 문자열, 객체 등 비교
-stringA.equals(stringB)
+⋅⋅⋅ stringA.equals(stringB)
 
 4. 논리연산자
-&&, ||
-조건문의 중첩을 줄일 수 있다
+⋅⋅⋅ &&, ||
+⋅⋅⋅ 조건문의 중첩을 줄일 수 있다
 ---
 ## 반복문 제어
 1. break  //특정 조건에서 반복문 빠져나가기
 2. continue // 특정 조건에서 실행 안하고 다음 조건으로 반복
 ---
 ## array
-변수 안에 여러개의 데이터를 담기
+⋅⋅⋅ 변수 안에 여러개의 데이터를 담기
 
 ### 정의 방법
 1. 한번에 정의
@@ -49,14 +49,14 @@ System.out.println(classGroup.length);      //4
 ```
 
 ### for-each
-배열과 반복문을 함께 사용할 때 좀 더 간결하게 하려고
+⋅⋅⋅ 배열과 반복문을 함께 사용할 때 좀 더 간결하게 하려고
 ```java
 for(String e : members) {
 System.out.println(e + "이 상담을 받았습니다");
 }
 ```
 ### array 한계
-처음에 배열 정의할때 length 값을 지정해주면 이후에 데이터를 초과해서 삽입하면 오류가 뜬다 즉 length가 자동적으로 변경되지 않는 불편함이 있다 -> collection으로 극복
+⋅⋅⋅ 처음에 배열 정의할때 length 값을 지정해주면 이후에 데이터를 초과해서 삽입하면 오류가 뜬다 즉 length가 자동적으로 변경되지 않는 불편함이 있다 -> collection으로 극복
 
 ---
 
@@ -116,11 +116,11 @@ java InputDemo one two three;      // 3
 ```
 
 2. eclipse
-run configuration – 추가 – argument 탭에 값 입력
+⋅⋅⋅ run configuration – 추가 – argument 탭에 값 입력
 
 3. 앱실행 중에 전달
-scanner 라이브러리 사용
-run 실행-콘솔창에 인자값 입력 후 enter- 콘솔창에 결과값 출력됨
+⋅⋅⋅ scanner 라이브러리 사용
+⋅⋅⋅ run 실행-콘솔창에 인자값 입력 후 enter- 콘솔창에 결과값 출력됨
 ```java
 import java.util.Scanner;  //스캐너 로드
 
@@ -136,7 +136,7 @@ public class ScannerDemo {
 }
 ```
 4. 특정 조건에서 항상 상호작용
-반복문 사용
+⋅⋅⋅ 반복문 사용
 ```java
 import java.util.Scanner;
 
@@ -175,7 +175,7 @@ public class Scanner3Demo {
         }
 
     }
- 
+
 }
 ```
 
