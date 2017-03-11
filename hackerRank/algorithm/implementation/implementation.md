@@ -210,3 +210,23 @@ function main() {
 
 ```
 ***
+
+##[Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer)
+
+```javascript
+function main() {
+    h = readLine().split(' ');
+    h = h.map(Number);
+    var word = readLine();
+    var arrH = [];
+    for(var i=0; i<word.length; i++){
+        arrH.push(h[word[i].charCodeAt(0)-97]);
+    }
+    var maxH = arrH.sort(function(a,b){return b-a})[0];
+    var width = word.length;
+    var result = maxH * width;
+    console.log(result);
+}
+
+```
+***
