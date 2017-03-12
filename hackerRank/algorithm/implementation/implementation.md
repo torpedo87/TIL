@@ -230,3 +230,26 @@ function main() {
 
 ```
 ***
+
+##[sock merchant](https://www.hackerrank.com/challenges/sock-merchant)
+
+```javascript
+function main() {
+    var n = parseInt(readLine());
+    c = readLine().split(' ');
+    c = c.map(Number);
+    //console.log(c);
+    var pairCount=0;
+    for(var i=0; i<n; i++){
+        for(var j=i+1; j<n; j++){
+            if(c[i] == c[j] && c[i] !== 'already checked'){
+                pairCount+=1;
+                c[j]= 'already checked';
+                break;
+            }
+        }
+    }console.log(pairCount);
+
+}
+```
+***
