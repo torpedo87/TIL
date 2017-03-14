@@ -277,3 +277,30 @@ function main() {
 
 ```
 ***
+
+##[Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)
+
+```javascript
+function main() {
+    var t = parseInt(readLine());
+    for(var a0 = 0; a0 < t; a0++){
+        var n = parseInt(readLine());
+        var height = 1;
+        if(n==0){
+            console.log(1);
+            continue;
+        }
+        for(var i=0; i<n; i++){
+            if(i%2==1){
+                height = height+1;
+            }else{
+                height = height*2;
+            }
+        }console.log(height);
+    }
+
+}
+
+
+```
+***
